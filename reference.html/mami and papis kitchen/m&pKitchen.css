@@ -1,0 +1,139 @@
+.topLeftSticky {
+    border-color: black;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    border: 8px;
+    position: fixed;
+}
+#logoH1 {
+    background-image: url("images/m&pLogoDraft2.png");
+    border-style: solid;
+    border-color: antiquewhite;
+    height: 780px;
+    width: 80%;
+    position: relative;
+    left: 130px;
+}
+body {
+    background-image: url("images/m&pBackground.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#navUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: block;
+    width: 100%;
+    padding: 0px 8px 1px 143px;
+}
+li {
+    float: left;
+    padding: 32px;
+}
+li.dropDwn1 {
+    display: inline-block;
+}
+.dropDwn1-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropDwn1-content a {
+    color: antiquewhite;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropDwn1-content a:hover {
+    background-color: lightskyblue;
+}
+
+.dropDwn1:hover .dropDwn1-content {
+    display: block;
+}
+li a, .dropBtn {
+    display: inline-block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropDwn1:hover .dropBtn {
+    background-color: lightskyblue;
+}
+#h2A {
+    text-align: center;
+    background-color: bisque;
+    color: brown;
+    border-style: solid;
+    font-size: 50px;
+}
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px;
+}
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.column.side {
+    width: 25%;
+}
+.column.middle {
+    width: 45%;
+    height: 450px;
+    background-color: bisque;
+    color: brown;
+    text-align: center;
+    font-size: 40px;
+}
+.columnA {
+    background-image: url("images/m&pColumnA-2.jpg");
+    background-size: 485px;
+}
+.columnB {
+    background-image: url("images/m&pColumnB-1.jpg");
+    background-size: 485px;
+}
+footer {
+    background-color: bisque;
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+#backToTop {
+    bottom: 20px;
+    right: 30px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#backToTop:hover {
+    background-color: black;
+}
+@media screen and (min-width: 601px) {
+    body {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 30px;
+    }
+}

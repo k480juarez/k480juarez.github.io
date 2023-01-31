@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>galleries.html</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 800px) {
+  /* .grid-container {
+    flex-direction: column-reverse;
+  } */
+}
+
+.topLeftSticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    color: white;
+    text-shadow: 0px 0px 2px whitesmoke;
+    writing-mode: vertical-lr;
+}
+  
+body {
+    background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+
+.header {
+    text-align: center;
+    font-size: 300%;
+    font-weight: 900;
+    color: whitesmoke;
+    text-shadow: 3px 3px 6px lightgrey;
+
+}
+
+img {
+    border: double lightgray 2px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.saturate {filter: saturate(7);}
+
+img:hover {
+  box-shadow: 0 0 2px 2px lightgray;
+  transform: scaleX(-1);
+}
+
+</style>
+</head>
+
+<body>
+        <h1 class="topLeftSticky">8</h1>
+   <section>
+   <h1 class="header"><strong>Gallery of Shoes</strong></h1>
+   <div class="grid-container">
+    <div class="d1"><a target="_blank" href="pics.index/allWhiteJ'sCuz.jpg"><img src="pics.index/allWhiteJ'sCuz.jpg" alt="sneakers" height="275" width="275"></a></div>
+    <div class="d2"><a target="_blank" href="pics.index/horseshoeCuz.png"><img src="pics.index/horseshoeCuz.png" alt="horseshoe" height="275" width="275"></a></div>
+    <div class="d3"><a target="_blank" href="pics.index/jsCuz.jpg"><img src="pics.index/jsCuz.jpg" alt="sneakers" height="275" width="275"></a></div>
+    <div class="d4"><a target="_blank" href="pics.index/pexels-riyan-ong-5354609.jpg"><img src="pics.index/pexels-riyan-ong-5354609.jpg" alt="sneakers" height="275" width="275"></a></div>
+    <div class="d5"><a target="_blank" href="pics.index/20sCuz.jpg"><img src="pics.index/20sCuz.jpg" alt="shoes" width="275" height="275"></a></div>
+    </div>
+   </section>
+<br>
+<br>
+   <section class="saturate">
+   <h1 class="header"><strong>Gallery of Coding</strong></h1>
+   <div class="grid-container">
+    <div class="d1"><a target="_blank" href="pics.index/endTagCuz.png"><img src="pics.index/endTagCuz.png" alt="end tag" height="275" width="275"></a></div>
+    <div class="d2"><a target="_blank" href="pics.index/cssCuz.png"><img src="pics.index/cssCuz.png" alt="css" height="275" width="275"></a></div>
+    <div class="d3"><a target="_blank" href="pics.index/css3Cuz.png"><img src="pics.index/css3Cuz.png" alt="css" height="275" width="275"></a></div>
+    <div class="d4"><a target="_blank" href="pics.index/vsCodeCuz.png"><img src="pics.index/vsCodeCuz.png" alt="vSCode" height="275" width="275"></a></div>
+    <div class="d5"><a target="_blank" href="pics.index/coderLifeCuz.png"><img src="pics.index/coderLifeCuz.png" alt="html" width="275" height="275"></a></div>
+    </div>
+   </section>
+<br>
+<br>
+   <section>
+   <h1 class="header"><strong>Gallery of Science</strong></h1>
+   <div class="grid-container">
+    <div class="d1"><a target="_blank" href="pics.index/galaxyCuz.jpg"><img src="pics.index/galaxyCuz.jpg" alt="galaxy" height="275" width="275"></a></div>
+    <div class="d2"><a target="_blank" href="pics.index/endeavourCuz.jpg"><img src="pics.index/endeavourCuz.jpg" alt="spaceship" height="275" width="275"></a></div>
+    <div class="d3"><a target="_blank" href="pics.index/cyclopsRobotCuz.jpg"><img src="pics.index/cyclopsRobotCuz.jpg" alt="robot" height="275" width="275"></a></div>
+    <div class="d4"><a target="_blank" href="pics.index/blueStuffCuz.jpg"><img src="pics.index/blueStuffCuz.jpg" alt="beaker with liquid" height="275" width="275"></a></div>
+    <div class="d5"><a target="_blank" href="pics.index/happyRobotCuz.jpg"><img src="pics.index/happyRobotCuz.jpg" alt="smiling robot" width="275" height="275"></a></div>
+    </div>
+   </section>
+<br>
+<br>
+   <section>
+   <h1 class="header"><strong>Gallery of Misc.</strong></h1>
+    <div class="grid-container">
+     <div class="d1"><a target="_blank" href="pics.index/glassBottleCuz.jpg"><img src="pics.index/glassBottleCuz.jpg" alt="glass bottle" height="275" width="275"></a></div>
+     <div class="d2"><a target="_blank" href="pics.index/acousticGuitarsCuz.jpg"><img src="pics.index/acousticGuitarsCuz.jpg" alt="acoustic guitars" height="275" width="275"></a></div>
+     <div class="d3"><a target="_blank" href="pics.index/bestWrapperAliveCuz.jpg"><img src="pics.index/bestWrapperAliveCuz.jpg" alt="christmas presents" height="275" width="275"></a></div>
+     <div class="d4"><a target="_blank" href="pics.index/bumpsCuz.jpg"><img src="pics.index/bumpsCuz.jpg" alt="headphones" height="275" width="275"></a></div>
+     <div class="d5"><a target="_blank" href="pics.index/photoShoot.jpg"><img src="pics.index/photoShoot.jpg" alt="photoshoot" width="275" height="275"></a></div>
+    </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+.topLeftSticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    color: white;
+    text-shadow: 0px 0px 2px whitesmoke;
+    writing-mode: vertical-lr;
+}
+
+body {
+    background-color: black;
+}
+
+#header {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: saddlebrown;
+    text-shadow: 3px 3px 5px black;
+    font-size: 500%;
+    background-image: url(pics.index/photoShoot5.jpg);
+    background-attachment: 100%;
+}
+
+#navBar {
+    margin: 0;
+    padding: 0;
+    background-color: darkgray;
+    padding: 4px;
+    text-align: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#navBar:hover {
+    border-radius: 10px;
+}
+
+.navLink {
+    display: flex;
+}
+
+#surveyForm {
+    border-style: none;
+    background-color: aliceblue;
+    color: black;
+    width: 50%;
+    float: inline-end;
+    padding: 10px;
+}
+
+.bottomRightSticky {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-style: none;
+}
+
+#gallery {
+    border: none;
+    width: auto;
+    float: left;
+    margin: 5%;
+}
+  
+.gallery:hover {
+    border: 2px double lightgrey;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 2px lightgray;
+    transform: scaleX(-1);
+    filter: opacity(50%);
+}
+  
+.gallery img {
+    border: double lightgray 2px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px lightgrey;
+}

@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(pics.index/galaxyCuz.jpg);
+    background-attachment: fixed;
+}
+
+.topLeftSticky {
+    border-color: black;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    border: 8px;
+    position: fixed;
+    z-index: 1;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .flexContainer {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+#navBar {
+    margin: 25px;
+    background-color: darkgray;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#navBar:hover {
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#welcomeSection {
+    background-image: url(pics.index/galaxyCuz\ \(2\).jpg);
+
+}
+
+h1 {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;  
+    text-shadow: 4px 4px 5px black;
+}
+
+#h1 {
+    width: 50px;
+    background-image: url(pics.index/galaxyCuz\ \(2\).jpg);
+    position: relative;
+    animation-name: developerKevin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    left: 600px;
+    top: 150px;
+    animation-direction: normal;
+    display: grid;
+    z-index: 1;
+  }
+  
+  @keyframes developerKevin {
+    /* 0%   {left:600px; top:150px;} */
+    0%   {left:50%; top:10px;}
+    /* 25%  {right:0px; top:450px;} */
+    25%  {right:25%; top:0px;}
+    /* 50%  {top:0px; right:10px;} */
+    50%  {right:50%; top:10px; }
+    /* 75%  {right:10px; top:450px;} */
+    75%  {right:25%; top:0px;}
+    /* 100% {left:600px; top:150px;} */
+    100% {left:50%; top:10px;}
+  }
+
+#h1A {
+    width: 130px;
+    background-image: url(pics.index/galaxyCuz\ \(2\).jpg);
+    position: relative;
+    animation-name: portfolioHeading;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    left: 600px;
+    top: 250px;
+    animation-direction: normal;
+    display: grid;
+    z-index: 1;
+}
+
+@keyframes portfolioHeading {
+    /* 0% {left:600px; top: 135px;} */
+    0% {left:10%; top: 35px;}
+    /* 25% {left:300px; top: 550px;} */
+    25% {right:50%; top: 20px;}
+    /* 50% {top: 135px; left: 600px;} */
+    50% {left: 50%; top: 35px; }
+    /* 75% {top:550px; left: 800px;} */
+    75% {right: 50%; top:20px; }
+    /* 100% {left: 600px; top:135px;} */
+    100% {left: 90%; top:35px;}
+}
+
+  #box1 {
+      display: flex;
+      top: 300vh;
+      height: 1000px;
+      border-style: none;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  #box1A:hover {
+      transition: .5s ease;
+      opacity: 0.6;
+  }
+
+  #box1A {
+        background-image: url(pics.index/happyRobotCuz\ \(3\).jpg);
+        width: 70%;
+        height: 100%;
+        flex-shrink: 1;
+        align-self: center;
+        opacity: 0.1;
+        border-radius: 100px;
+        transform: rotate(20deg);
+  }
+
+  #middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #box1A:hover #middle {
+      opacity: 1;
+  }
+
+  #text {
+      color: white;
+      font-size: 60px;
+      padding: 16px 32px;
+      text-align: center;
+      text-shadow: 4px 4px 5px black;
+  }
+
+  #box1B {
+        background-color: silver;
+        opacity: 0.7;
+        width: 100%;
+        height: 75%;
+        align-self: auto;
+        border-radius: 50px;
+  }
+
+  p {
+      display: flex;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+      font-size: 250%;
+  }
+
+  .row {
+      display: flex;
+      margin: 10px 10px;
+  }
+
+  .row, .row > .column {
+      padding: 2px;
+      display: flex;
+  }
+
+  .column {
+      display: flex;
+      float: left;
+      width: 25%;
+      margin: 15px;
+      height: 50%;
+  }
+
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .projectTile:hover {
+      background-color: none;
+      opacity: 0.5;
+  }
+
+  @media screen and (max-width:900px) {
+      .column {
+          width: 100%;
+      }
+      #box1B {
+          height: 150%;
+      }
+  }
+
+  @media screen and (max-width:600px) {
+      .column {
+          display: flex;
+          width: 100%;
+      }
+      #box1B {
+          height: 75%;
+      }
+
+  }
+
+  #boxCAboutHero {
+      display: flex;
+      border-style: none;
+      background-color: dimgray;
+      color: white;
+      align-self: baseline;
+      border-radius: 50px;
+      opacity: 0.7;   
+  }     
+
+  #aboutHeroHeading {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 100%;
+      text-align: center;
+      text-shadow: 0px 0px 2px black;
+      color: white;
+      padding: 10px;
+  }
+
+  #aboutHero {
+    display: flex;
+    font-size: 30px;
+    text-indent: 2px;
+    text-shadow: 0px 0px 2px black;
+    padding: 10px;
+  }
+
+  #skillsTable {
+      display: flex;
+      font-size: 30px;
+      text-align: center;
+      text-shadow: 0px 0px 2px black;
+      text-indent: 250px;
+  }
+
+  #skillsBox {
+      display: flex;
+      background-color: dimgray;
+      color: white;
+      text-align: center;
+      text-shadow: 0px 0px 2px black;
+      font-size: 30px;
+  }
+
+  .resume {
+      border-radius: 5px;
+      width: 50%;
+      margin-left: 25%;      
+      font-size: 20px;
+  }
+
+  .resume:hover {
+      background-color: darkgrey;
+  }
+
+  #contactMe {
+      border-style: none;
+      background-color: dimgray;
+      border-radius: 50px;
+      text-align: center;
+  }
+
+  #contactMeHeader {
+      color: white;
+      text-shadow: 0px 0px 2px black;
+      font-size: 40px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      padding: 10px;
+  }
+
+  #contactMeInfo {
+      color: white;
+      text-shadow: 0px 0px 2px black;
+      font-size: 30px;
+      text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 5px;
+}
